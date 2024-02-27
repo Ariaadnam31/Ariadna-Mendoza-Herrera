@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*ubicación*/
+    background-color: rgba(29, 32, 34, 0.269);
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+header ul li {
+    list-style: none;
+    margin: 30px;
+    font-size: 35px;
+    font-family: "Raleway", sans-serif;
+}
+
+img{  /*imagen de logo*/ 
+    width: 150px;
+    padding: 10px;
+    border-radius: 15%;
+
+} 
+h1 {  /*Titulo*/
+    font-size: 40px; /*tamaño de letra*/
+    color: rgb(11, 11, 71); /*color*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; /*tipo de fuente*/
+}
+h2{
+    font-size: 30px;
+    color: rgba(1, 1, 79, 0.843);
+    font-family: "Raleway", sans-serif;
+}
+h3{
+    font-size: 28px;
+    color: rgba(1, 1, 79, 0.669);
+    font-family: "Raleway", sans-serif;
+}
+
+p{ /*parrafo*/
+    font-size: 20px;
+    color: rgba(1, 1, 79, 0.669);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: right;
+}
+.contenido{ /*El punto hace referencia a la clase*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    background-color: rgba(97, 97, 98, 0.297);
+}
+.caja {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}  
+.caja img{
+    border-radius: 15%;
+    width: 400px;
+
+
+}
+.caja p{
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+}
+
+#Contacto{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(133, 117, 80, 0.596);
+    
+}
+
+#Contacto iframe {
+    padding: 20px;
+    margin: 20px;
+}
+
+Estilos para el carrusel 
+.carousel {
+    width: 50%; /*ajusta el ancho*/
+    margin:auto; /*centra el carrucel en la pagina*/
+    overflow: hidden;
+    border: 1px solid #ccc; /* bordes para el carrusel */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    flex: 0 0 auto;
+}
+
+.carousel-item img {
+    width: 50%; /* ajusta el tamaño de las imágenes dentro del carrusel */
+    height: auto; /* asegura que la altura se ajuste proporcionalmente */
+}
+/* Estilos para los controles */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px 30px; /* aumenta el padding para hacer los botones más grandes */
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background 0.3s ease;
+    font-family: "Raleway", sans-serif;
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
+}
